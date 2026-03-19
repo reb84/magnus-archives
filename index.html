@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,111 +9,121 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Special+Elite&family=Share+Tech+Mono&display=swap"
       rel="stylesheet"
     />
+
     <!--FONT AWESOME-->
-    <script src="https://kit.fontawesome.com/5dc87e2c0a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5dc87e2c0a.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- stylesheet -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <!-- container -->
-      <header>
-        <!-- banner -->
-        <div class="banner">
-          <h1>
-            The
-            <div class="magnus">Magnus</div>
-            Archives
+    <header>
+      <div class="hero">
+      <div class="hero-content">
+          <p class="hero-eyebrow">Magnus Institute · Statement Archive</p>
+
+          <h1 class="hero-title">
+            <span class="the">The</span>
+            <span class="magnus-word">Magnus</span>
+            <span class="archives">Archives</span>
           </h1>
-          <h2>Make your statement, face your fear.</h2>
 
-          <a href="#more" class="more-button"><span>if you dare</span></a>
-        </div>
-      </header>
-      <main>
-        <!-- about -->
-        <div class="about-container" id="more">
-          <div class="about">
-            <h2>What is The Magnus Archives?</h2>
-            <p>
-              The Magnus Archives was a weekly horror fiction anthology podcast examining what lurks
-              in the archives of the Magnus Institute, an organisation dedicated to researching the
-              esoteric and the weird. Join new head archivist Jonathan Sims as he attempts to bring
-              a seemingly neglected collection of supernatural statements up to date, converting
-              them to audio and supplementing them with follow-up work from his small but dedicated
-              team. Individually, they are unsettling. Together they begin to form a picture that is
-              truly horrifying because as they look into the depths of the archives, something
-              starts to look back…
-            </p>
-          </div>
-        </div>
+          <p class="hero-subtitle">Make your statement. Face your fear.</p>
 
-        <div class="quote-container">
-          <div class="quote">
-            <h3>
-              “<span id="quote-result">
-                I haven't slept in some time. I can't sleep. My dreams are crawling and many-legged.
-                They are slithering and burrowing. But they always sing the song of flesh. </span
-              >”
-            </h3>
-          </div>
-          <div class="quote-generator">
-            <a onclick="generateNumber()" class="quote-button" title="click to read more quotes">
-              click for more
-            </a>
-          </div>
+          <a href="#about" class="hero-cta">Enter the Archives</a>
         </div>
+        </div>
+    </header>
 
-        <div class="subscribe-container">
-          <div class="subscribe">
-            <h2>Subscribe</h2>
-            <div class="button-container">
-              <a class="subscribe-button" href="http://rss.acast.com/themagnusarchives"
-                ><i class="fa-solid fa-rss"></i> RSS Feed</a
-              >
-              <a
-                class="subscribe-button"
-                href="https://open.spotify.com/show/5pwBAjuJJAOt7cED5Lkjnk"
-                ><i class="fa-brands fa-spotify"></i> Spotify</a
-              >
-              <a
-                class="subscribe-button"
-                href="https://podcasts.apple.com/us/podcast/the-magnus-archives/id1095138637"
-                ><i class="fa-brands fa-apple"></i> Apple Podcasts</a
-              >
-              <a class="subscribe-button" href="https://www.youtube.com/@RustyQuill"
-                ><i class="fa-brands fa-youtube"></i> YouTube</a
-              >
-            </div>
-          </div>
-        </div>
+    <main>
+      <!-- about -->
+      <section class="about-section" id="about">
+        <div class="section-tag">Statement begins</div>
+        <h2>What is The Magnus Archives?</h2>
+        <p>
+          The Magnus Archives was a weekly horror fiction anthology podcast
+          examining what lurks in the archives of the Magnus Institute, an
+          organisation dedicated to researching the esoteric and the weird. Join
+          new head archivist Jonathan Sims as he attempts to bring a seemingly
+          neglected collection of supernatural statements up to date, converting
+          them to audio and supplementing them with follow-up work from his
+          small but dedicated team. Individually, they are unsettling. Together
+          they begin to form a picture that is truly horrifying because as they
+          look into the depths of the archives, something starts to look back…
+        </p>
+      </section>
 
-        <div class="extra-container">
-          <div class="extra">
-            <h2>The horror continues...</h2>
-            <p>
-              If you've survived the terror of the Magnus Archives, you can find the next
-              instalment,
-              <em>The Magnus Protocol</em>,
-              <a href="https://rustyquill.com/show/the-magnus-protocol/">here</a> ready for you.
-            </p>
-          </div>
+      <!-- quotes -->
+      <section class="quote-section" id="quotes">
+        <div class="section-tag">From the statements</div>
+
+        <p class="quote-text" id="quoteText">
+          I haven't slept in some time. I can't sleep. My dreams are crawling
+          and many-legged. They are slithering and burrowing. But they always
+          sing the song of flesh.
+        </p>
+        <p class="quote-attribution">- The Magnus Archives</p>
+
+        <button class="quote-btn" title="Read another statement">
+          Another statement
+        </button>
+      </section>
+
+      <!-- subscribe -->
+<section class="subscribe-section" id="subscribe">
+        <div class="section-tag">Find us in the dark</div>
+        <h2>Subscribe</h2>
+        <p class="sub-note">The archive is always listening</p>
+
+        <div class="platform-grid">
+          <a class="platform-btn" href="http://rss.acast.com/themagnusarchives">
+            <i class="fa-solid fa-rss"></i>
+            RSS Feed
+          </a>
+          <a class="platform-btn" href="https://open.spotify.com/show/5pwBAjuJJAOt7cED5Lkjnk">
+            <i class="fa-brands fa-spotify"></i>
+            Spotify
+          </a>
+          <a class="platform-btn" href="https://podcasts.apple.com/us/podcast/the-magnus-archives/id1095138637">
+            <i class="fa-brands fa-apple"></i>
+            Apple Podcasts
+          </a>
+          <a class="platform-btn" href="https://www.youtube.com/@RustyQuill">
+            <i class="fa-brands fa-youtube"></i>
+            YouTube
+          </a>
         </div>
-      </main>
-      <footer>
-        <div class="footer-container">
-          <p>
-            Website © Rebecca Upton. Created for a
-            <a href="https://www.shecodes.io/">SheCodes</a> Challenge. See my
-            <a href="https://github.com/reb84/sc-challenge-podcast">GitHub</a> for more.
-          </p>
-        </div>
-      </footer>
-      <!-- /container -->
-    </div>
+      </section>
+
+      <!-- sequel -->
+      <section class="sequel-section" id="sequel">
+        <div class="section-tag">The horror continues</div>
+        <p>
+          If you've survived the terror of the Magnus Archives, the next
+          instalment awaits you - 
+          <em
+            ><a href="https://rustyquill.com/show/the-magnus-protocol/"
+              >The Magnus Protocol</a
+            ></em
+          >.
+        </p>
+        <p>Something is still watching. Something is always watching.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Website &copy; Rebecca Upton -
+        <a href="https://github.com/reb84/magnus-archives">GitHub</a>
+      </p>
+    </footer>
+
     <script src="./script.js"></script>
   </body>
 </html>
