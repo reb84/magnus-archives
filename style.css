@@ -208,7 +208,7 @@ body::after {
   color: var(--cream);
   font-style: italic;
   text-shadow: 0 0 60px rgba(0, 168, 79, 0.2);
-  animation: fadeInUp 1s ease 0.5s both, flicker 8s ease-in-out infinite 2s;
+  animation: fadeInUp 1s ease 0.5s both, flicker 7s ease-in-out infinite 2s;
   letter-spacing: -0.02em;
 }
 
