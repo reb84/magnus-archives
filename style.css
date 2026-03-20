@@ -133,7 +133,7 @@ body::after {
 .eye-ring {
   position: absolute;
   border-radius: 50%;
-  border: 1px solid var(--green-dim);
+  border: 2px solid var(--green-dim);
   opacity: 0.15;
   animation: expandRing linear infinite;
 }
@@ -451,8 +451,6 @@ section {
   text-transform: uppercase;
   transition: all 0.3s ease;
   position: relative;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.01);
 }
 
 .platform-btn i {
@@ -461,25 +459,9 @@ section {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.platform-btn::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--green-dim);
-  transform: scaleY(0);
-  transform-origin: bottom;
-  transition: transform 0.3s ease;
-  z-index: -1;
-  opacity: 0.3;
-}
-
 .platform-btn:hover {
   border-color: var(--green);
   color: var(--cream);
-}
-
-.platform-btn:hover::before {
-  transform: scaleY(1);
 }
 
 .platform-btn:hover i {
