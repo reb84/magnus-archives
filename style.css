@@ -296,7 +296,9 @@ section {
 
 .quote-section {
   text-align: center;
+  background: radial-gradient(ellipse at center, rgba(0, 168, 79, 0.06) 0%, transparent 70%);
 }
+
 
 .quote-text {
   font-family: var(--font-serif);
@@ -309,7 +311,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-shadow: 0 0 20px rgba(0, 168, 79, 04);
+  text-shadow: 0 0 20px rgba(0, 168, 79, 0.3);
+  transition: opacity 0.4s ease;
   padding: 0 1rem;
 }
 
