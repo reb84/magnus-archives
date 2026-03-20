@@ -317,16 +317,6 @@ section {
   opacity: 0;
 }
 
-.quote-attribution {
-  font-family: var(--font-type);
-  font-size: 0.65rem;
-  letter-spacing: 0.3rem;
-  color: var(--amber);
-  opacity: 0.5;
-  margin-top: 1.5rem;
-  text-transform: uppercase;
-}
-
 .quote-btn {
   display: inline-flex;
   align-items: center;

@@ -1,7 +1,7 @@
 let randomQuote = "";
 
 function generateQuote() {
-  document.getElementById("quote-result").innerHTML = `${randomQuote}`;
+  document.getElementById("quoteText").textContent = `${randomQuote}`;
 }
 
 function generateNumber() {
