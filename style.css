@@ -38,7 +38,6 @@
   }
 }
 
-
 @keyframes flicker {
 
   0%,
@@ -57,6 +56,18 @@
 
   99% {
     opacity: 0.7;
+  }
+}
+
+@keyframes expandRing {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.25;
+  }
+
+  100% {
+    transform: scale(8);
+    opacity: 0;
   }
 }
 
@@ -117,6 +128,42 @@ body::after {
   align-items: center;
   justify-content: center;
   z-index: 0;
+}
+
+.eye-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--green-dim);
+  opacity: 0.15;
+  animation: expandRing linear infinite;
+}
+
+.eye-ring:nth-child(1) {
+  width: 200px;
+  height: 200px;
+  animation-duration: 8s;
+  animation-delay: 0s;
+}
+
+.eye-ring:nth-child(2) {
+  width: 200px;
+  height: 200px;
+  animation-duration: 8s;
+  animation-delay: -2s;
+}
+
+.eye-ring:nth-child(3) {
+  width: 200px;
+  height: 200px;
+  animation-duration: 8s;
+  animation-delay: -4s;
+}
+
+.eye-ring:nth-child(4) {
+  width: 200px;
+  height: 200px;
+  animation-duration: 8s;
+  animation-delay: -6s;
 }
 
 .central-eye {
