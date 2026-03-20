@@ -499,62 +499,22 @@ footer a:hover {
 
 /* responsive */
 
-@media screen and (max-width: 768px) {
-  .banner h1 {
-    font-size: 3.475rem;
-  }
-
-  .magnus {
-    font-size: 7.1rem;
-  }
-
-  .banner h2 {
-    font-size: 0.675rem;
-  }
-
-  p {
-    font-size: 0.8em;
-  }
-
-  .quote {
-    width: 90%;
-  }
-
-  .quote h3 {
-    font-size: 1.5rem;
-  }
-
-  .button-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .subscribe-button {
-    margin: 3px auto;
-    width: 150px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .banner h1 {
-    font-size: 1.475rem;
-  }
-
-  .magnus {
-    font-size: 4.1rem;
-  }
-
-  .banner h2 {
-    font-size: 0.475rem;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-  }
-
-  p {
-    font-size: 0.8em;
-  }
-
-  .quote {
-    width: 100%;
-  }
-}
+            @media (max-width: 600px) {
+      
+              .hero-title .the,
+              .hero-title .archives {
+                letter-spacing: 0.3rem;
+              }
+      
+              .platform-grid {
+                grid-template-columns: 1fr 1fr;
+              }
+      
+              .about-section p::first-letter {
+                font-size: 2.5rem;
+              }
+      
+              section {
+                padding: 3.5rem 1.25rem;
+              }
+            }
