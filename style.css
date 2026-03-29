@@ -193,8 +193,8 @@ body::after {
 
 .hero-top {
   font-family: var(--font-type);
-  font-size: 0.7rem;
-  letter-spacing: 0.5rem;
+  font-size: 0.8125em;
+  letter-spacing: 0.3rem;
   color: var(--amber);
   opacity: 0.7;
   text-transform: uppercase;
@@ -302,8 +302,8 @@ section {
 
 .section-tag {
   font-family: var(--font-type);
-  font-size: 0.6rem;
-  letter-spacing: 0.5rem;
+  font-size: 0.8125em;
+  letter-spacing: 0.3rem;
   color: var(--amber);
   opacity: 0.6;
   text-transform: uppercase;
